@@ -1,0 +1,99 @@
+/* Стили хедера */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--primary-color);
+  padding: var(--spacing-unit) 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.header__menu-checkbox {
+  display: none;
+}
+
+.header__nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--primary-color);
+  display: none;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+}
+
+.header__nav-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__nav-item a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.header__nav-item a:hover {
+  color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header__menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Показ меню при активном чекбоксе */
+.header__menu-checkbox:checked ~ .header__nav {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .header__nav {
+    display: block;
+    position: static;
+    min-width: auto;
+    box-shadow: none;
+  }
+
+  .header__menu-toggle {
+    display: none;
+  }
+
+  .header__nav-list {
+    flex-direction: row;
+    gap: var(--spacing-unit);
+    list-style: none;
+  }
+
+  .header__nav-item {
+    border-bottom: none;
+  }
+}

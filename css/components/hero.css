@@ -1,0 +1,68 @@
+/* Стили герой-секции */
+.hero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero__subtitle {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  max-width: 600px;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  border: 5px solid var(--accent-color);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.hero__cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--accent-color);
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.hero__cta:hover {
+  transform: translateY(-2px);
+  background-color: #e6c200;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 6rem 0;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.5rem;
+  }
+}

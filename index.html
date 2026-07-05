@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Лендинг-трибьют, посвященный творчеству короля поп-музыки Майклу Джексону"
+    />
+    <meta
+      name="keywords"
+      content="король, Майкл Джексон, поп-музыка, поп, творчество, легенда"
+    />
+    <meta property="og:title" content="Michael Jackson Tribute" />
+    <meta property="og:type" content="website" />
+    <title>Michael Jackson Tribute</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">MJ Tribute</a>
+        <input type="checkbox" id="menu-toggle" class="header__menu-checkbox" />
+        <label for="menu-toggle" class="header__menu-toggle" aria-label="Меню">
+          ☰
+        </label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#home">Главная</a></li>
+            <li class="header__nav-item">
+              <a href="#discography">Дискография</a>
+            </li>
+            <li class="header__nav-item"><a href="#about">О легенде</a></li>
+            <li class="header__nav-item"><a href="#gallery">Галерея</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__container">
+          <h1 class="hero__title">
+            Майкл Джексон
+            <span class="hero__subtitle">Король поп-музыки</span>
+          </h1>
+          <img
+            src="/img/mj-portrait-compressed.jpg"
+            alt="Майкл Джексон"
+            class="hero__image"
+            loading="lazy"
+          />
+          <a href="#discography" class="hero__cta">Открыть дискографию</a>
+        </div>
+      </section>
+
+      <section class="section discography" id="discography">
+        <div class="container">
+          <h2 class="section__title">
+            Величайшие альбомы <span>в истории музыки</span>
+          </h2>
+          <div class="discography__grid">
+            <article class="discography__card">
+              <div class="discography__image-wrapper">
+                <img
+                  src="/img/cover/thriller-cover-compressed.jpg"
+                  alt="Thriller"
+                  class="discography__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="discography__content">
+                <p class="discography__year">1982</p>
+                <h3 class="discography__album-title">Thriller</h3>
+                <p class="discography__description">
+                  Самый продаваемый альбом в истории. 7 платиновых дисков в США.
+                </p>
+              </div>
+            </article>
+
+            <article class="discography__card">
+              <div class="discography__image-wrapper">
+                <img
+                  src="/img/cover/off-the-wall-cover-compressed.jpg"
+                  alt="Off the Wall"
+                  class="discography__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="discography__content">
+                <p class="discography__year">1979</p>
+                <h3 class="discography__album-title">Off the Wall</h3>
+                <p class="discography__description">
+                  Дебютный альбом на Epic Records. 4 Grammy номинации.
+                </p>
+              </div>
+            </article>
+
+            <article class="discography__card">
+              <div class="discography__image-wrapper">
+                <img
+                  src="/img/cover/bad-cover-compressed.jpg"
+                  alt="Bad"
+                  class="discography__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="discography__content">
+                <p class="discography__year">1987</p>
+                <h3 class="discography__album-title">Bad</h3>
+                <p class="discography__description">
+                  Первый альбом с 5 номерами 1 в Billboard. 37 миллионов
+                  проданных копий.
+                </p>
+              </div>
+            </article>
+
+            <article class="discography__card">
+              <div class="discography__image-wrapper">
+                <img
+                  src="/img/cover/dangerous-cover-compressed.jpg"
+                  alt="Dangerous"
+                  class="discography__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="discography__content">
+                <p class="discography__year">1991</p>
+                <h3 class="discography__album-title">Dangerous</h3>
+                <p class="discography__description">
+                  Новый звук, новый стиль. 30 миллионов проданных копий.
+                </p>
+              </div>
+            </article>
+
+            <article class="discography__card">
+              <div class="discography__image-wrapper">
+                <img
+                  src="/img/cover/history-cover-compressed.jpeg"
+                  alt="History"
+                  class="discography__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="discography__content">
+                <p class="discography__year">1995</p>
+                <h3 class="discography__album-title">HIStory</h3>
+                <p class="discography__description">
+                  Сборник хитов и новых треков. 20 миллионов проданных копий.
+                </p>
+              </div>
+            </article>
+
+            <article class="discography__card">
+              <div class="discography__image-wrapper">
+                <img
+                  src="/img/cover/invincible-cover-compressed.jpeg"
+                  alt="Invincible"
+                  class="discography__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="discography__content">
+                <p class="discography__year">2001</p>
+                <h3 class="discography__album-title">Invincible</h3>
+                <p class="discography__description">
+                  Последний студийный альбом. 10 миллионов проданных копий.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--bg-secondary" id="about">
+        <div class="container">
+          <h2 class="section__title">
+            О легенде <span>короля поп-музыки</span>
+          </h2>
+          <div style="max-width: 800px; margin: 0 auto; text-align: center">
+            <p>
+              Майкл Джексон (29 августа 1958 — 25 июня 2009) — американский
+              певец, автор песен, танцор, продюсер и филантроп. Он начал свою
+              музыкальную карьеру в возрасте 11 лет в группе The Jackson Five и
+              стал одним из самых влиятельных музыкантов XX века.
+            </p>
+            <br />
+            <p>
+              Джексон получил 13 Grammy Awards, 26 American Music Awards и стал
+              первым исполнителем, чьи альбомы Thriller и Bad продались тиражом
+              более 30 миллионов копий по всему миру. Его вклад в музыку, танцы
+              и филантропию оставил неизгладимый след в истории искусства.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <h2 class="section__title">Галерея <span>моментов легенды</span></h2>
+          <div
+            class="gallery__grid"
+            style="
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 1rem;
+              margin-top: 2rem;
+            "
+          >
+            <img
+              src="/img/concert/concert-1-compressed.jpg"
+              alt="Выступление"
+              style="width: 100%; height: 300px; object-fit: cover"
+              loading="lazy"
+            />
+            <img
+              src="/img/concert/concert-2-compressed.jpg"
+              alt="Выступление"
+              style="width: 100%; height: 300px; object-fit: cover"
+              loading="lazy"
+            />
+            <img
+              src="/img/concert/concert-3-compressed.jpg"
+              alt="Выступление"
+              style="width: 100%; height: 300px; object-fit: cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <h2 class="footer__title">Michael Jackson Tribute</h2>
+        <p class="footer__description" style="margin-bottom: 1rem">
+          Посвящено памяти короля поп-музыки
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">i</a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">y</a>
+        </div>
+        <p class="footer__copyright">
+          © 2026 Michael Jackson Tribute. Все права защищены.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

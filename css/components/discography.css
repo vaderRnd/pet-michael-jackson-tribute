@@ -1,0 +1,100 @@
+/* Базовые стили секции */
+.section {
+  padding: 4rem 0;
+}
+
+.section--bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.section__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.section__title span {
+  color: var(--accent-color);
+}
+
+/* Стили секции дискографии */
+.discography {
+  padding: 4rem 0;
+}
+
+.discography__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.discography__card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.discography__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.discography__image-wrapper {
+  overflow: hidden;
+}
+
+.discography__image {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.discography__card:hover .discography__image {
+  transform: scale(1.05);
+}
+
+.discography__content {
+  padding: 1.5rem;
+}
+
+.discography__year {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.discography__album-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.discography__description {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .discography__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discography__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
